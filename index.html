@@ -1,0 +1,23 @@
+---
+layout: rosa
+title: Home
+testo: come va?
+ciao: true
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <h1>{{ "Hello World!" | uppercase }}</h1>
+    <p>
+        {{ page.testo }}
+    </p>
+    {% if page.ciao %}
+<h1 style="color:blueviolet"> ciao </h1>  
+{% endif %}
+  </body>
+</html>
